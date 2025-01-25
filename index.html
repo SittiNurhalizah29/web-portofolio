@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Portfolio - Sitti Nurhalizah</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+            font-size: 14px; /* Mengurangi ukuran font default */
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background: rgba(0, 0, 0, 0.9);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.6rem;
+            font-weight: bold;
+            color: #f39c12;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 500;
+            transition: color 0.3s, transform 0.3s;
+            font-size: 0.9rem; /* Mengurangi ukuran font link */
+        }
+
+        nav ul li a:hover {
+            color: #f39c12;
+            transform: translateY(-3px);
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(to right, #f39c12, #e74c3c);
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            animation: fadeIn 2s ease-out;
+        }
+
+        .hero h3 {
+            font-size: 1.2rem;
+            font-weight: 300;
+            color: #f4f4f9;
+            margin-top: 10px;
+            opacity: 0;
+            animation: slideIn 2s ease-out 1s forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .hero h1 span {
+            color: #f39c12;
+            font-size: 1.1em;
+            animation: bounceIn 1.5s ease-out 1.5s forwards;
+        }
+
+        @keyframes bounceIn {
+            0% {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+            50% {
+                transform: scale(1.2);
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .about, .education, .skills, .contact {
+            background: #fff;
+            margin: 60px auto;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 750px;
+        }
+
+        .about img {
+            width: 150px;
+            height: 200px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            font-size: 1.6rem;
+            margin-bottom: 15px;
+            color: #333;
+            border-bottom: 2px solid #f39c12;
+            display: inline-block;
+        }
+
+        p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .skills ul {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 15px;
+        }
+
+        .skills ul li {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .skills ul li:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .skills ul li .skill-name {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #f39c12;
+        }
+
+        .skills ul li .description {
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        .sosial a {
+            margin: 0 8px;
+            color: #f39c12;
+            font-size: 1.2rem;
+            transition: transform 0.3s;
+        }
+
+        .sosial a:hover {
+            transform: scale(1.2);
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #333;
+            color: #fff;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h2 class="logo">porto<span>folio</span></h2>
+        <ul>
+            <li><a href="#bio">Biodata</a></li>
+            <li><a href="#education">Pendidikan</a></li>
+            <li><a href="#skills">Keahlian</a></li>
+            <li><a href="#contact">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <h1>Sitti Nurhalizah S.</h1>
+        <h3>Teknik Informatika</h3>
+    </div>
+
+    <div class="about" id="bio">
+        <h2>Tentang Saya</h2>
+        <img src="image.jpeg" alt="Sitti Nurhalizah">
+        <p>Saya adalah mahasiswa semester 5 Universitas Islam Makassar Fakultas Teknik, program studi Informatika, dengan IPK 3,67. Minat saya terutama di bidang kecerdasan buatan dan pengembangan perangkat lunak.</p>
+    </div>
+
+    <div class="education" id="education">
+        <h2>Pendidikan</h2>
+        <div class="box">
+            <div>
+                <h5>Universitas Islam Makassar</h5>
+                <p>Program Studi Informatika (2021 - Sekarang)</p>
+            </div>
+            <div>
+                <h5>SMK Negeri 1 Makassar</h5>
+                <p>Teknik Komputer dan Jaringan (2018 - 2021)</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="skills" id="skills">
+        <h2>Keahlian</h2>
+        <ul>
+            <li>
+                <div class="skill-name">Desain Grafis</div>
+                <p class="description">Keahlian dalam menggunakan perangkat lunak seperti Adobe Photoshop, Illustrator, dan Canva untuk menciptakan desain kreatif seperti logo, poster, dan materi pemasaran.</p>
+            </li>
+            <li>
+                <div class="skill-name">Pengembangan Web</div>
+                <p class="description">Berpengalaman dalam membangun dan mengelola situs web menggunakan HTML, CSS, JavaScript, dan framework seperti Bootstrap, dengan fokus pada desain responsif.</p>
+            </li>
+            <li>
+                <div class="skill-name">Kecerdasan Buatan</div>
+                <p class="description">Menguasai algoritma machine learning dan deep learning untuk analisis data dan model prediksi.</p>
+            </li>
+            <li>
+                <div class="skill-name">Manajemen Proyek</div>
+                <p class="description">Mampu mengelola proyek teknologi, memastikan kolaborasi tim yang efisien dan hasil yang sesuai dengan kebutuhan klien.</p>
+            </li>
+        </ul>
+    </div>
+
+    <div class="contact" id="contact">
+        <h2>Kontak</h2>
+        <p>Email: sittinurhaliza@123.gmail</p>
+        <p>Telepon: 08134567894</p>
+        <div class="sosial">
+            <a href="https://www.facebook.com/cica.halisa.16"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.whatsapp.com/?lang=id_ID"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/cicahalisa_?igsh=MTJ4c2JwcWhvams5bA=="><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Sitti Nurhalizah S. - Semua hak dilindungi.</p>
+    </footer>
+</body>
+</html>

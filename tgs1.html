@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Email</title>
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault(); // Mencegah pengiriman formulir secara default
+            const email = document.getElementById('mail').value; // Mengambil nilai email
+            console.log('Email yang dimasukkan:', email); // Menampilkan email di konsol
+            alert('Email yang dimasukkan: ' + email); // Menampilkan email dalam alert
+        }
+    </script>
+</head>
+<body>
+    <form action="" onsubmit="handleSubmit(event)">
+        <input type="email" name="email" placeholder="Input your email" id="mail" required>
+        <input type="submit" value="Let's Start" name="submit">
+    </form>
+</body>
+</html>

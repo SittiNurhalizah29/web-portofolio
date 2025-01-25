@@ -1,0 +1,302 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Hero Section */
+.hero {
+    background: #007bff;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav h2 {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Content Section */
+.content {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.content h1 {
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+.content h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.news {
+    margin-top: 20px;
+}
+
+.news input[type="email"] {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.news input[type="submit"] {
+    padding: 10px 15px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.about {
+    background-color: #fff; /* White background for the about section */
+    padding: 40px 20px; /* Padding around the section */
+    text-align: center; /* Center align text */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin: 20px; /* Margin around the section */
+}
+
+.about h2 {
+    font-size: 28px; /* Font size for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.profile-pic {
+    width: 150px; /* Set width for the profile picture */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Make the image circular */
+    margin-bottom: 20px; /* Space below the image */
+}
+
+.about p {
+    font-size: 16px; /* Font size for the paragraph */
+    margin-bottom: 20px; /* Space below the paragraph */
+}
+.talk-button {
+    padding: 10px 20px; /* Padding for the button */
+    background-color: #007bff; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners for the button */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+.talk-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+/* Education Section */
+.education {
+    background-color: #f4f4f4; /* Light gray background for the education section */
+    padding: 40px 20px; /* Padding around the section */
+    text-align: center; /* Center align text */
+    border-radius: 10px; /* Rounded corners */
+    margin: 20px; /* Margin around the section */
+}
+.education .title h2 {
+    font-size: 28px; /* Font size for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+.box {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-around; /* Space out the cards */
+    flex-wrap: wrap; /* Allow wrapping to the next line */
+}
+.card {
+    background: white; /* White background for each card */
+    border-radius: 10px; /* Rounded corners for the card */
+    padding: 20px; /* Padding inside the card */
+    margin: 10px; /* Margin around the card */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: 250px; /* Fixed width for the card */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.card h5 {
+    font-size: 20px; /* Font size for the institution name */
+    margin-bottom: 10px; /* Space below the institution name */
+}
+
+.card p {
+    font-size: 16px; /* Font size for the program description */
+    margin-bottom: 15px; /* Space below the description */
+}
+
+.button {
+    padding: 10px 15px; /* Padding for the button */
+    background-color: #007bff; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners for the button */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    text-decoration: none; /* Remove underline from link */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+.button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+/* Skills Section */
+.skills {
+    background-color: #f4f4f4; /* Light gray background for the skills section */
+    padding: 40px 20px; /* Padding around the section */
+    text-align: center; /* Center align text */
+    border-radius: 10px; /* Rounded corners */
+    margin: 20px; /* Margin around the section */
+}
+
+.skills h2 {
+    font-size: 28px; /* Font size for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.skills ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+}
+
+.skills ul li {
+    font-size: 18px; /* Font size for each skill */
+    margin: 10px 0; /* Space between each skill */
+    padding: 10px; /* Padding for each skill item */
+    background-color: white; /* White background for each skill item */
+    border-radius: 5px; /* Rounded corners for skill items */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.skills ul li:hover {
+    transform: translateY(-3px); /* Lift effect on hover */
+}
+
+/* Contact Section */
+.contact {
+    background-color: #fff; /* White background for the contact section */
+    padding: 40px 20px; /* Padding around the section */
+    text-align: center; /* Center align text */
+    border-radius: 10px; /* Rounded corners */
+    margin: 20px; /* Margin around the section */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.contact h2 {
+    font-size: 28px; /* Font size for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.contact p {
+    font-size: 16px; /* Font size for the paragraph */
+    margin-bottom: 20px; /* Space below the paragraph */
+}
+
+.contact form {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align items */
+}
+
+.contact input[type="email"] {
+    padding: 10px; /* Padding for the email input */
+    width: 250px; /* Fixed width for the input */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 10px; /* Space below the input */
+}
+
+.contact input[type="submit"] {
+    padding: 10px 15px; /* Padding for the submit button */
+    background-color: #28a745; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners for the button */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.contact input[type="submit"]:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.sosial {
+    margin-top: 20px; /* Space above social media links */
+}
+
+.sosial a {
+    margin: 0 10px; /* Space between social media icons */
+    color: #333; /* Icon color */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 24px; /* Size of the icons */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.sosial a:hover {
+    color: #007bff; /* Change color on hover */
+}
+/* Social Media Section */
+.sosial {
+    margin-top: 20px; /* Space above social media links */
+}
+
+.sosial a {
+    margin: 0 10px; /* Space between social media icons */
+    color: #333; /* Icon color */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 24px; /* Size of the icons */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.sosial a:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+/* Footer */
+footer {
+    text-align: center; /* Center align text in footer */
+    padding: 20px; /* Padding for footer */
+    background-color: #007bff; /* Background color for footer */
+    color: white; /* Text color for footer */
+    position: relative; /* Positioning for footer */
+    bottom: 0; /* Align footer to the bottom */
+    width: 100%; /* Full width for footer */
+}
+
+footer p {
+    margin: 0; /* Remove margin for footer text */
+    font-size: 14px; /* Font size for footer text */
+}
